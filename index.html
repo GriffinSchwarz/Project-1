@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Honda Civic — Interactive Exploded 3D Model</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- 3D canvas mounts here -->
+    <div id="viewport">
+      <div id="loading">
+        <div class="spinner"></div>
+        <p>Building the Civic…</p>
+      </div>
+      <div id="hint">Drag to orbit · Scroll to zoom · Click a part for details</div>
+    </div>
+
+    <!-- Left: parts browser -->
+    <aside id="sidebar">
+      <header>
+        <h1>Honda Civic</h1>
+        <p class="subtitle">Interactive exploded model</p>
+      </header>
+      <div id="part-list"><!-- populated by JS --></div>
+    </aside>
+
+    <!-- Right: details for the selected part -->
+    <aside id="details" class="empty">
+      <div id="details-empty">
+        <h2>Select a part</h2>
+        <p>Click a part in the 3D view or the list on the left to learn more about it.</p>
+      </div>
+      <div id="details-content" hidden>
+        <span id="d-category" class="chip"></span>
+        <h2 id="d-name"></h2>
+        <p id="d-desc"></p>
+        <h3>Specifications</h3>
+        <dl id="d-specs"></dl>
+      </div>
+    </aside>
+
+    <!-- Bottom: controls -->
+    <footer id="controls">
+      <div class="control-group explode">
+        <label for="explode-slider">Explode</label>
+        <input id="explode-slider" type="range" min="0" max="100" value="0" />
+        <span id="explode-value">0%</span>
+      </div>
+      <div class="control-group buttons">
+        <button id="btn-collapse" title="Snap fully assembled">▣ Collapse</button>
+        <button id="btn-expand" title="Snap fully exploded">▢ Expand</button>
+        <button id="btn-rotate" title="Toggle auto-rotate">⟳ Auto-rotate</button>
+        <button id="btn-reset" title="Reset camera">⌖ Reset view</button>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Three.js is vendored locally (js/vendor) so the app runs fully offline, no build step -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "./js/vendor/three/three.module.js",
+      "three/addons/": "./js/vendor/three/addons/"
+    }
+  }
+  </script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
