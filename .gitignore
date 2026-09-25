@@ -1,0 +1,29 @@
+# Secrets - never commit
+secrets.json
+*.secret
+*.key
+*.token
+*.pem
+.env
+.env.*
+users.json
+passwords.json
+sessions.json
+codes.json
+devices.json
+throttle.json
+
+# Real data - never commit
+*.xlsx
+*.xlsm
+*.xls
+*.msg
+*.eml
+~$*
+
+# Working folders
+_scratch*/
+_backups/
+tools/test-runs/
+__pycache__/
+*.pyc
