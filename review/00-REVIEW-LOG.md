@@ -50,3 +50,9 @@ Review brief: "Fable 5.1 Comprehensive System Review Prompt" (7 phases,
 
 - 2026-10-06 19:2x UTC: Phase 1 request sent to HELM (brief ->
   docs/REVIEW/2026-10-06-fable-review/01-SYSTEM-BRIEF.md).
+- 2026-10-06 19:46 UTC: check-in. No reply. HELM's transcript 19:22-19:46
+  shows no cross-session message arrived (Griffin gave it Vantage V-E/V-F/
+  V-H work at 19:33; it now waits on a GUARDRAILS paste). Desktop Commander
+  MCP connected but runs inside this Linux container, so still no W: access.
+- 2026-10-06 19:48 UTC: resent with priority "now", asked for a one-line
+  ack. Fallback paste file: review/01-PHASE1-REQUEST-FOR-HELM.md.
