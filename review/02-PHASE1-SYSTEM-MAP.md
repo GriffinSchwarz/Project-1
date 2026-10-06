@@ -170,3 +170,78 @@ scheduled task for the hub; tools run in the hub's job object.
 9. Concurrency: pm-service snapshot read (16 s) vs save wait; Write Desk
    lock; PO Generator "issuing" counter; any shared-state races?
 10. GOALS.md success criteria, docs/BACKLOG.md top items, SECURITY.md.
+
+## 10. Additions from the September desk sessions (notes: helm-desk-sessions-notes.md)
+
+Older (2026-09-23 to 09-25) but structural. Anything marked (09-25) may have
+changed since; Phase 2 must re-check against live shas.
+
+### Services and ports (09-25)
+| Tool id | Port | Folder | Held |
+|---|---|---|---|
+| hub | 8888 | engine/ | hub (Switch Helm over) |
+| po | 8790 | PO Generator/app | yes |
+| shop | 8791 | shop-service | no |
+| receiving | 8792 | receiving-service | yes |
+| pulse | 8794 | pulse-service | no |
+| jobsetup | 8795 | System files - do not open\Job Setup Agent\desk | yes |
+| field | 8796 | field-service | no (held from V-E) |
+| write | 8797 | write-service | yes |
+| glass | 8799 | glass-service | yes |
+| pm | 8800 | pm-service | no |
+Others named: office-copy, public-data-service, sightline,
+florida-notice-deadlines (deadlines), calc, insights, map, board, search,
+measure. Every service binds 127.0.0.1 and trusts "this PC" and the hub.
+
+### Hub facts (09-25)
+- `/brand/*` and `/helm-bar.js` are served public, before sign-in.
+- Body caps: 64 KB on hub routes, 2 MB on tools, 50 MB on po/glass/vantage,
+  20 MB on `/api/relay` (the Claude relay).
+- Held tools: STATE\deployed\<id>.json fingerprint; a changed held tool
+  refuses to start until Deploy now; "a press on a down tool skips
+  preflight".
+- Sign-in hardening landed 09-25: weak-password list (lib\weak-passwords.txt,
+  pinned), shared/role-mailbox refusal, 30-min lock after 10 wrong tries in
+  15 min, IP cap 20/15 min, lock-alert e-mail to the owner (rate-limited),
+  all in hub.py plus hub_security_light.py. Device tracking (new-device
+  notice, sign out one device) designed, not built.
+- The hub injects six static files into tool pages without `?v=` (cache
+  gotcha); PM Reports reads its CSP pin at start but pages per request, so
+  landing order matters (wrong order blanks the page for every PM).
+- Crew rollout (shop/field accounts, invites, hub_shop_crew.py messaging via
+  an Outlook worker) was on HOLD pending Griffin's first invite.
+
+### Other root documents (09-25)
+CLAUDE.md, AGENTS.md, GOALS.md, GUARDRAILS.md, STYLE.md, TOOLS.md,
+SECURITY.md (the security map, items 8a-8p), HUB RUNBOOK.md, WRITE RULES.md,
+SKILLS.md, ROADMAP.md, DECISIONS.md, MEMORY.md, QUESTIONS.md, START HERE.md,
+BUILD ORDER 2026-09-12.md, HELM 2.0 - operations platform plan.md, four
+"GRIFFIN DOES" files, docs/BACKLOG.md. TOOLS.md and the SECURITY map were
+found factually wrong in places (Job Setup's write path; Write Desk token
+order; Glass roles).
+
+### Tooling (09-25)
+- `engine\_staging\_lib\packetkit.py` (packetkit-4): shared packet tool,
+  full-sha pinned `_patch.py` per packet; its live-root guard works only for
+  HELM\system packets (PO Generator, Job Setup, Calculator could write
+  straight to live).
+- `checks\security_check.py`: text-integrity scan with a size+mtime cache in
+  %LOCALAPPDATA%; `checks\code_backup.py`: eight sources into
+  %LOCALAPPDATA%\KeyGlass\backups\code\<date> with a manifest, hard links,
+  skips _staging/_deploys/_scratch and secret-shaped files (2,139 files,
+  325 MB on 09-25).
+- `engine\usage.py`: reads Claude transcripts' tails for a Usage page.
+- Host rule: never delete; nothing on C: except %LOCALAPPDATA%\KeyGlass
+  (Huntress EDR has flagged Helm before).
+
+### Write paths (09-25)
+- Write Desk is documented as the ONE Smartsheet write path (propose ->
+  preview 15 min/20 cells -> named approval bound to the shown pairs, 409 on
+  mismatch -> recheck -> execute -> verify -> 30-day undo; never-editable
+  money/identity columns; VOID-not-delete).
+- Exceptions found: PO Generator issues its own rows (approved, GUARDRAILS
+  third exception); Job Setup desk writes Smartsheet through its own tools
+  (kgjob -> tool\Smartsheet.py, sheetdoor.py) using the PO Generator's
+  secrets file, contradicting TOOLS.md.
+- Secrets: %LOCALAPPDATA%\KeyGlass\po-generator\secrets.json (shared by Job
+  Setup), hub\tunnel.token, proxy.secret, codes.key, *.token.
