@@ -77,3 +77,7 @@ Review brief: "Fable 5.1 Comprehensive System Review Prompt" (7 phases,
   for 10-01 02:15 to 10-02 15:34 UTC (the 09-30/10-01 audits). Phase 2
   code request drafted (04-PHASE2-CODE-REQUEST.md). Still no channel to
   HELM; waiting on Griffin.
+- 2026-10-06 ~21:30 UTC: part-3 agent done (80 pages, 10-01 07:20 to
+  10-02 15:34 UTC); unread remainder is 02:15-07:20 UTC on 10-01 only.
+  Register now F-01..F-60. Transcript research closed; everything further
+  needs code (Phase 2) through Griffin or HELM.
