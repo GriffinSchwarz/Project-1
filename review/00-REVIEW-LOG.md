@@ -65,3 +65,10 @@ Review brief: "Fable 5.1 Comprehensive System Review Prompt" (7 phases,
   code backup here. Meanwhile two research agents mine the HELM main
   transcript and four archived desk-session transcripts into
   review/research/ for architecture facts.
+- 2026-10-06 20:2x UTC: first research agent done (60 pages, 10-05 11:51
+  to 10-06 20:06 UTC). Drafted 02-PHASE1-SYSTEM-MAP.md and
+  03-FINDINGS-REGISTER.md (25 provisional findings) from it. Second agent
+  continues 10-01 to 10-05; desk-sessions agent still running. HELM
+  transcript at 20:24: V-E SECURITY GO (loopback-is-never-a-person tests
+  pass); Griffin asked for the switch-over window. Still no paste of the
+  Phase 1 request into HELM.
