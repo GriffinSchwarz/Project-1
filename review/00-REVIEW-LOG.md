@@ -56,3 +56,12 @@ Review brief: "Fable 5.1 Comprehensive System Review Prompt" (7 phases,
   MCP connected but runs inside this Linux container, so still no W: access.
 - 2026-10-06 19:48 UTC: resent with priority "now", asked for a one-line
   ack. Fallback paste file: review/01-PHASE1-REQUEST-FOR-HELM.md.
+- 2026-10-06 20:04 UTC: check-in 2. Still nothing. The 19:48 resend
+  (priority "now") also never appeared in HELM's transcript; HELM's only
+  turns since were task notifications (PO Generator no-quote + More info
+  packet staged at 20:00, SECURITY read launched). Conclusion: the
+  cross-session channel does not reach this bridge session. Griffin must
+  paste review/01-PHASE1-REQUEST-FOR-HELM.md into HELM, or attach the
+  code backup here. Meanwhile two research agents mine the HELM main
+  transcript and four archived desk-session transcripts into
+  review/research/ for architecture facts.
