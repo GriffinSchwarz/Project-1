@@ -72,3 +72,8 @@ Review brief: "Fable 5.1 Comprehensive System Review Prompt" (7 phases,
   transcript at 20:24: V-E SECURITY GO (loopback-is-never-a-person tests
   pass); Griffin asked for the switch-over window. Still no paste of the
   Phase 1 request into HELM.
+- 2026-10-06 ~21:00 UTC: part-2 transcript agent done (80 pages, 10-02
+  15:34 to 10-03 06:13 UTC). Register now F-01..F-50. Launched part-3 agent
+  for 10-01 02:15 to 10-02 15:34 UTC (the 09-30/10-01 audits). Phase 2
+  code request drafted (04-PHASE2-CODE-REQUEST.md). Still no channel to
+  HELM; waiting on Griffin.
