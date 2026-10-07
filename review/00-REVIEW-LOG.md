@@ -104,3 +104,7 @@ Review brief: "Fable 5.1 Comprehensive System Review Prompt" (7 phases,
   from HELM's SendMessage inputs. Batch 1 (13:15 UTC) did not appear in
   HELM's transcript up to 14:03; HELM compacted at 13:33. No further
   check-ins from the cloud: the local session takes over.
+- 2026-10-07 15:00 UTC: read HELM's brief; reconciled the register
+  (F-23, F-26 resolved; F-61..F-68 added; P-26 added). Phase 1 is closed
+  on HELM's own evidence. Cloud session's last planning act; the local
+  session continues from the handoff.

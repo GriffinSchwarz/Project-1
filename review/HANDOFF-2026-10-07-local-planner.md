@@ -41,6 +41,7 @@
 
 ## Open questions
 - Batch 1 must be re-sent from the PC (see the update above).
+- The brief has been reconciled against the register (03-FINDINGS-REGISTER.md, last section): F-23 and F-26 resolved, F-61 to F-68 added, P-26 added. Fold these into batch 2 before sending it.
 - Bases syntax on Griffin's Obsidian version; CLAUDE_CODE_PLUGIN_DIRS separator on Windows; the dev-mods folder path.
 - Was the Cloudflare tunnel token ever rotated (F-26)? Is the claude.ai 24186 board private yet (F-21)?
 

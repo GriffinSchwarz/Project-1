@@ -33,3 +33,4 @@ until Phase 5 (validation with HELM and Griffin).
 | P-22 | Receiving: group-folder search, ledger first receipt, PO number typing | F-33 | receiving (held) | Known broken user path. |
 | P-23 | Documentation truth: TOOLS.md, SECURITY map, one limits table | F-37, F-50 | docs | Cheap, prevents the next wrong assumption. |
 | P-24 | Write Desk owner checks on every editable sheet; session cookie and people-list protection | F-40, F-48 | write (held) + hub | Money write authorisation. |
+| P-26 | Move Smartsheet, CompanyCam and CRM tokens out of user environment variables and URLs into the hub's local state store (kgsecrets.py) | F-63 | lib (five presses) + each service; Griffin | Same root as the this-PC trust: every local process inherits them today. |
