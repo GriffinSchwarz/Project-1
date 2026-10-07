@@ -81,3 +81,10 @@ Review brief: "Fable 5.1 Comprehensive System Review Prompt" (7 phases,
   10-02 15:34 UTC); unread remainder is 02:15-07:20 UTC on 10-01 only.
   Register now F-01..F-60. Transcript research closed; everything further
   needs code (Phase 2) through Griffin or HELM.
+- 2026-10-07 13:15 UTC: Griffin reaffirmed: Fable plans, HELM executes
+  with Sonnet 5.5 subagents. HELM resumed 13:10 UTC after a monthly spend
+  limit; at ~941k context; mid V-E switch-over. Sent plan batch 1
+  (review/plans/BATCH-1.md: channel bootstrap via transcripts, P-00
+  inventory, P-08 page hold, P-17 Griffin actions); send_message returned
+  "delivered". Check-in armed 14:01 UTC. Drafted batch 2
+  (P-24, P-20, P-01, P-06, P-07, P-15).
