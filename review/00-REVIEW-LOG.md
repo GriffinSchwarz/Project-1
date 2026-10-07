@@ -96,3 +96,11 @@ Review brief: "Fable 5.1 Comprehensive System Review Prompt" (7 phases,
   side by side. Research persisted under research/ (design-sites-ooda,
   helm-ui-rules, claude-mods-api, second-brain-design). Handoff written:
   HANDOFF-2026-10-07-local-planner.md. This cloud session now only relays.
+- 2026-10-07 14:45 UTC: check-in 3. HELM's transcript shows it DID
+  receive the Phase 1 request: redacted brief (693 lines, sha eec8f3701b17,
+  SECURITY GO) written to docs\REVIEW\2026-10-06-fable-review\
+  01-SYSTEM-BRIEF-redacted.md and sent to this session in two parts at
+  13:36/13:37 UTC; neither part reached this session. Recovering the text
+  from HELM's SendMessage inputs. Batch 1 (13:15 UTC) did not appear in
+  HELM's transcript up to 14:03; HELM compacted at 13:33. No further
+  check-ins from the cloud: the local session takes over.

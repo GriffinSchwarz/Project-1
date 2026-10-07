@@ -34,8 +34,13 @@
 4. Local Fable: confirm with HELM whether batch 1 arrived; if not, hand it over as a peer message; collect P-00's ROUTES.md and BRIEF.md; finalise batch 2.
 5. Cloud session: the 14:01 UTC check-in on batch 1 fires once more; it reports and stops.
 
+## Update 14:45 UTC: HELM did answer the Phase 1 request
+- HELM's transcript shows it wrote a redacted system brief (693 lines, 69,659 bytes, sha12 eec8f3701b17, SECURITY GO) at `W:\AI Procedures\HELM\system\docs\REVIEW\2026-10-06-fable-review\01-SYSTEM-BRIEF-redacted.md` (send record in `01-SENT.md`, SECURITY read in `01-SECURITY-READ.md`), and sent it to the cloud session in two parts at 13:36 and 13:37 UTC. The parts never arrived in the cloud; the cloud session recovered the text from HELM's SendMessage tool inputs into `review/research/01-SYSTEM-BRIEF-redacted.md` (if that file is present in the zip, it is the brief). The local session should read the W: original directly and treat it as the Phase 1 answer.
+- HELM believes the cloud session "cannot reply"; from the PC, peer messaging works both ways. Tell HELM the planner is now local.
+- Batch 1 (sent 13:15 UTC with priority "later") did NOT appear in HELM's transcript up to 14:03 UTC; HELM compacted its context at 13:33 UTC. Hand batch 1 over again as a peer message from the PC.
+
 ## Open questions
-- Did batch 1 reach HELM (check HELM's transcript for "FABLE")?
+- Batch 1 must be re-sent from the PC (see the update above).
 - Bases syntax on Griffin's Obsidian version; CLAUDE_CODE_PLUGIN_DIRS separator on Windows; the dev-mods folder path.
 - Was the Cloudflare tunnel token ever rotated (F-26)? Is the claude.ai 24186 board private yet (F-21)?
 
