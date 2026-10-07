@@ -88,3 +88,11 @@ Review brief: "Fable 5.1 Comprehensive System Review Prompt" (7 phases,
   inventory, P-08 page hold, P-17 Griffin actions); send_message returned
   "delivered". Check-in armed 14:01 UTC. Drafted batch 2
   (P-24, P-20, P-01, P-06, P-07, P-15).
+- 2026-10-07 ~14:30 UTC: Griffin's new ask (about-me interview, Obsidian
+  second brain, Claude mods, Helm UI motion, six sites, design folder).
+  Plan written and approved (06-PLAN-second-brain-mods-ui.md). Decisions:
+  planner moves to a local session on the PC; vault at W:\AI Procedures\
+  Second Brain; interview in the vault one question per turn; review runs
+  side by side. Research persisted under research/ (design-sites-ooda,
+  helm-ui-rules, claude-mods-api, second-brain-design). Handoff written:
+  HANDOFF-2026-10-07-local-planner.md. This cloud session now only relays.
